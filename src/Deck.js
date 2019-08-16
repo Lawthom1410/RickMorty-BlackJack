@@ -7,7 +7,7 @@ export class Deck extends Component{
     constructor(){
         super();
         this.state = {
-            cardList: [Math.floor(Math.random()*100),Math.floor(Math.random()*100)],
+            cardList: [Math.floor(Math.random()*50),Math.floor(Math.random()*50)],
             score: 0,
             isStick: 0
         }
@@ -21,7 +21,7 @@ export class Deck extends Component{
 
     addCard = () => {
         let cardList = this.state.cardList;
-        cardList.push(Math.floor(Math.random()*100));
+        cardList.push(Math.floor(Math.random()*50));
         this.setState({
             cardList: cardList
         })

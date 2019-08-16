@@ -29,6 +29,12 @@ export class Card extends Component{
                 score = 4
             }
 
+            else if((name === "Summer Smith" || name === "Beth Smith" || name === "Jerry Smith") && cardData.origin.name === "Earth (Replacement Dimension)"){
+                score = 6
+            } else if(name.includes("Summer") || name.includes("Beth") || name.includes("Jerry")){
+                score = 3
+            }
+
             else {
                 score = 1
             }
